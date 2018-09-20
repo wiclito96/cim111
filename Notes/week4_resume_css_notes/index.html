@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+
+<html>
+
+  <head>
+
+    <meta charset="utf-8">
+    <title>Wycliffe's Resume</title>
+
+    <meta name="author" content="Wycliffe Grafton Jr.">
+    <meta name="discription" content="I built this resume using html. Go me!">
+    <!-- HTML Comment -->
+
+    <style>
+      /* CSS Comment (this only works here) */
+        body{
+          background-color: orange;
+          background-color: #333333;
+          background-color: rgb(0,255,0);
+
+          font-family: sans-serif;
+        }
+
+        h1{
+          color: pink;
+          background-color: white;
+        }
+
+        a{
+          text-decoration: none;
+          color: red;
+          font-weight: 900;
+        }
+
+        a:hover{
+          color: black;
+          text-decoration: underline;
+        }
+
+        a:visited{
+          color: green;
+        }
+
+        #name{
+          text-align: center;
+          background-color: cyan;
+        }
+
+        p{
+          line-height: 50px;
+          text-indent: 20px;
+        }
+
+
+        /*If it was just 'li', it would change all list. But since we specified 'ul li', then all and just 'ul' list lost their glyphs.*/
+        ul li{
+          list-style: none;
+        }
+
+        .links{
+          color: cyan;
+        }
+
+        header{
+          background-color: orange;
+        }
+
+        main{
+          background-color: white;
+        }
+
+        footer{
+          background-color: green;
+        }
+
+        section{
+          background-color: red;
+        }
+
+        aside{
+          background-color: blue;
+        }
+
+    </style>
+
+  </head>
+
+  <body>
+    <!-- This is going to look so ugly without indents. I was right. But CSS helps. -->
+    <header>
+    <h1 id="name">Wycliffe Grafton Jr.</h1>
+      <p>239-233-5261</p>
+      <p>wiclito96@gmail.com</p>
+    </header>
+
+    <main>
+
+    <section>
+    <h2>About Me</h2>
+
+      <p>Raised in Cape Coral, FL. I am a senior at the University of Miami. One of my goals in life is to start-up my own multimedia production studio in Miami. Go Canes!</p>
+
+      <img src="images/ME.jpg" height="200">
+    </section>
+    <section>
+    <h3>Education:</h3>
+
+      <p><b>University of Miami</b>, Coral Gables, FL</p>
+      <p><i>Bachelor of Science in Motion Pictures and International Studies</i></p>
+        <ul>
+          <li>May 2019</li>
+          <li>Minors in Spanish and Interactive Media</li>
+          <li>GPA: 3.52</li>
+        </ul>
+      </section>
+      <section>
+    <h3>Work Experience</h3>
+
+      <p><b>Toppel Career Center</b>, Coral Gables, FL</p>
+      <p><i>Student Assistant (Feburary 2016 - Present)</i></p>
+        <ul>
+          <li>Manage phones, voice messages and calls for an office of 16+ professional staff</li>
+          <li>Strengthen relationships with students, employers, alumni and guests</li>
+          <li>Assisted in organizing special events for the Associate Dean and Executive Director, Employer Engagement and Career Education teams</li>
+        </ul>
+
+      <p><b>FilmGate Miami</b>, Miami, FL</p>
+      <p><i>Tech Playground Coordinator (Feburary 3-5 2017)</i></p>
+        <ul>
+          <li>Communicated with exhibitors to ensure that all exhibits were placed in appropriate spots, so that their projects functioned at the best level</li>
+          <li>Ensured that monitors, projectors, wires, platforms and other equipment needed was secured</li>
+          <li>In charge of set-up and tear-down of the Tech Playground</li>
+        </ul>
+      </section>
+      <section>
+    <h3>Hobbies</h3>
+
+      <ul>
+        <li>Frost Band of the Hour</li>
+        <li>Phi Mu Alpha Sinfonia</li>
+        <li>Delta Kappa Alpha</li>
+        <li>Off the Wire</li>
+      </ul>
+    </section>
+    <aside>
+    <h4>Helpful Links</h4>
+
+      <table>
+
+        <tr>
+          <th>Name</th>
+          <th>Link</th>
+        </tr>
+
+        <tr>
+          <td>Frost Band of the Hour</td>
+          <td><a class="links" href="https://www.bandofthehour.org/">bandofthehour.org</a></td>
+        </tr>
+
+        <tr>
+          <td>Off the Wire</td>
+          <td><a href="https://www.youtube.com/user/OffTheWire">OffTheWire's Youtube</a></td>
+        </tr>
+
+      </table>
+    </aside>
+    <aside>
+      <h3>Blog</h3>
+    <article>
+      <h5>What is the deal with this heat?</h5>
+        <p>It is very hot!</p>
+    </article>
+    </aside>
+
+    </main>
+
+    <footer>
+      <p>This information is &nbsp; &nbsp; &copy; </p>
+      <address>
+        5100 Brunson Dr, Coral Gables, FL 33146
+      </address>
+    </footer>
+  </body>
+
+</html>
