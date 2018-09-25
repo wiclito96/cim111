@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css?family=Monoton|Righteous');
+
+title{
+  font-family: 'Monoton', cursive;
+}
+
+body{
+  background-color: gold;
+}
+
+a{
+  text-decoration: none;
+  color: blue;
+}
+
+a:hover{
+  color: green;
+  text-decoration: underline;
+}
+
+p{
+  font-family: 'Righteous', cursive;
+}
+
+#name{
+  text-align: center;
+  background-color: red;
+}
+
+#school{
+  color: red;
+}
+
+#about{
+  font-family: cursive;
+}
+
+#table{
+  text-align: center;
+  border: blue;
+}
+
+#address{
+  font-family: fantasy;
+}
+
+.sectionHead{
+  text-align: center;
+  border-style: ridge;
+}
+
+.work{
+  text-shadow: 5px blue;
+}

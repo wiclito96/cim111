@@ -9,27 +9,29 @@
     <meta name="author" content="Wycliffe Grafton Jr.">
     <meta name="discription" content="I built this resume using html. Go me!">
 
+    <link rel="stylesheet" href="css/style.css">
+
   </head>
 
   <body>
     <!-- This is going to look so ugly without indents -->
 
-    <h1>Wycliffe Grafton Jr.</h1>
+    <header>
+    <h1 id="name">Wycliffe Grafton Jr.</h1>
       <p>239-233-5261</p>
       <p>wiclito96@gmail.com</p>
-        <address>
-          5100 Brunson Dr, Coral Gables, FL 33146
-        </address>
+    </header>
 
-    <h2>About Me</h2>
+    <main>
+    <h2 class="sectionHead">About Me</h2>
 
-      <p>Raised in Cape Coral, FL. I am a senior at the University of Miami. One of my goals in life is to start-up my own multimedia production studio in Miami. Go Canes!</p>
+      <p id="about">Raised in Cape Coral, FL. I am a senior at the University of Miami. One of my goals in life is to start-up my own multimedia production studio in Miami. Go Canes!</p>
 
       <img src="images/ME.jpg" height="200">
 
-    <h3>Education:</h3>
+    <h3 class="sectionHead">Education:</h3>
 
-      <p><b>University of Miami</b>, Coral Gables, FL</p>
+      <p id="school"><b>University of Miami</b>, Coral Gables, FL</p>
       <p><i>Bachelor of Science in Motion Pictures and International Studies</i></p>
         <ul>
           <li>May 2019</li>
@@ -37,9 +39,9 @@
           <li>GPA: 3.52</li>
         </ul>
 
-    <h3>Work Experience</h3>
+    <h3 class="sectionHead">Work Experience</h3>
 
-      <p><b>Toppel Career Center</b>, Coral Gables, FL</p>
+      <p class="work"><b>Toppel Career Center</b>, Coral Gables, FL</p>
       <p><i>Student Assistant (Feburary 2016 - Present)</i></p>
         <ul>
           <li>Manage phones, voice messages and calls for an office of 16+ professional staff</li>
@@ -47,7 +49,7 @@
           <li>Assisted in organizing special events for the Associate Dean and Executive Director, Employer Engagement and Career Education teams</li>
         </ul>
 
-      <p><b>FilmGate Miami</b>, Miami, FL</p>
+      <p class="work"><b>FilmGate Miami</b>, Miami, FL</p>
       <p><i>Tech Playground Coordinator (Feburary 3-5 2017)</i></p>
         <ul>
           <li>Communicated with exhibitors to ensure that all exhibits were placed in appropriate spots, so that their projects functioned at the best level</li>
@@ -55,7 +57,7 @@
           <li>In charge of set-up and tear-down of the Tech Playground</li>
         </ul>
 
-    <h3>Hobbies</h3>
+    <h3 class="sectionHead">Hobbies</h3>
 
       <ul>
         <li>Frost Band of the Hour</li>
@@ -63,10 +65,11 @@
         <li>Delta Kappa Alpha</li>
         <li>Off the Wire</li>
       </ul>
+    </main>
 
-    <h4>Helpful Links</h4>
+    <h4 class="sectionHead">Helpful Links</h4>
 
-      <table>
+      <table id="table">
 
         <tr>
           <th>Name</th>
@@ -84,6 +87,13 @@
         </tr>
 
       </table>
+
+    <footer>
+      <p>This information is &nbsp; &nbsp; &copy; </p>
+      <address id="address">
+        5100 Brunson Dr, Coral Gables, FL 33146
+      </address>
+    </footer>
 
   </body>
 
