@@ -1,0 +1,16 @@
+#changeText{
+  color: pink;
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+.backgroundChange{
+  background-color: blue;
+}
+
+#box{
+  background-color: pink;
+  width: 180px;
+  height: 180px;
+  padding: 10px;
+}
