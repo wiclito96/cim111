@@ -8,15 +8,6 @@
   background-color: blue;
 }
 
-#box{
-  background-color: pink;
-  width: 180px;
-  height: auto;
-  padding: 10px;
-  border: solid red 10px;
-  /*margin: 0 auto;*/
-}
-
 header{
   background-color: orange;
   width: 960px;
@@ -61,3 +52,38 @@ nav{
         color: white;
         text-decoration: underline;
       }
+
+#container1{
+  width: 700px;
+  height: auto;
+  background-color: cyan;
+  margin: 0 auto;
+}
+
+#box{
+  background-color: pink;
+  width: 180px;
+  height: auto;
+  padding: 10px;
+  border: solid red 10px;
+  display: inline-block;
+  margin-top: 0px;
+}
+
+#box2{
+  background-color: pink;
+  width: 400px;
+  height: 300px;
+  padding: 10px;
+  display: inline-block;
+  margin-left: 40px;
+  margin-top: 10px;
+}
+
+.columns{
+  width: 180px;
+  height: 400px;
+  background-color: aqua;
+  display: inline-block;
+  margin-right: 15px;
+}
