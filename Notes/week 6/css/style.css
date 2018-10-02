@@ -30,3 +30,15 @@
   margin: 50px 50px 50px 50px;
   margin: 0 auto;
 }
+
+header{
+  background-color: orange;
+}
+
+main{
+  background-color: black;
+}
+
+footer{
+  background-color: orange;
+}
