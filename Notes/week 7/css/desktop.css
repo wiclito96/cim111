@@ -21,20 +21,3 @@ main{
   display: inline-block;
   vertical-align: top;
 }
-
-@media only screen and (min-width: 960px){
-  body{
-    background-color: orange;
-  }
-}
-
-@media only screen and (max-width: 600px){
-  body{
-    background-color: green;
-  }
-  .col{
-    width: 100%;
-    display: block;
-    margin-bottom: 20px;
-  }
-}
