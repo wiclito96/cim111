@@ -1,0 +1,17 @@
+@import "desktop.css";
+
+#row{
+  display: grid;
+  grid-template-areas: "row";
+  grid-template-rows: 1fr;
+  grid-template-columns: 100%;
+  text-align: center;
+}
+
+#grid{
+  display: grid;
+  grid-template-areas: "col1" "col2";
+  grid-template-rows: 1fr 1fr;
+  grid-template-columns: 100%;
+  text-align: center;
+}

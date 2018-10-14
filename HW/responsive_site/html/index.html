@@ -5,11 +5,16 @@
 
     <title>The Marching Arts</title>
 
+    <link rel="stylesheet" href="css/desktop.css" media="only screen and (min-width: 600px)">
+    <link rel="stylesheet" href="css/mobile.css" media="only screen and (max-width: 600px)">
+
+    <style></style>
+
   </head>
 
   <body>
     <header>
-      <h1>Welcome to Marching Band!</h1>
+      <div id="logo"><img src="" alt=""></div>
 
       <nav>
         <ul>
@@ -18,31 +23,36 @@
           <li><a href="html/gallery.html">Gallery</a></li>
         </ul>
       </nav>
+
+      <div class="class"></div>
     </header>
 
     <main>
-      <div id="row1">
-        <h2>Are you Ready?</h2>
-        <img src="" alt="">
-      </div>
+      <h1>Welcome to Marching Band!</h1>
+
+        <div id="row">
+          <img id="img1" src="" alt="">
+        </div>
 
       <section id="grid">
+
         <div id="col1">
-          <h3>Band Photo</h3>
-          <img src="" alt="">
+          <h4>Band Photo</h4>
+          <img id="img2" src="" alt="">
         </div>
 
         <div id="col2">
-          <h3>Strike up the Band!</h3>
+          <h2>Strike up the Band!</h2>
           <p></p>
         </div>
+
       </section>
     </main>
 
     <footer>
-      <p>This content is &nbsp; &copy;</p>
-      <address>3911 SW 62nd Ave. Miami, FL. 33155</address>
-      <h6>Growth Productions &trade;</h6>
+      <div id="copy"><p>This content is &nbsp; &copy;</p></div>
+      <div id="address"><address>3911 SW 62nd Ave. Miami, FL. 33155</address></div>
+      <div id="trade"><h6>Growth Productions &trade;</h6></div>
     </footer>
   </body>
 </html>
