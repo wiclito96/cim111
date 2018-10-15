@@ -1,0 +1,102 @@
+
+header, footer{
+  width: 80%;
+  height: 100px;
+  background-color: green;
+  text-align: center;
+}
+
+#logo{
+  width: 50%;
+  display: inline-block;
+}
+
+nav{
+  float: right;
+  background-color: orange;
+  height: 1fr;
+  width: 50%;
+}
+  nav ul{}
+    nav ul li{
+      list-style: none;
+      display: inline-block;
+    }
+      nav ul li a{
+        text-decoration: none;
+        color: green;
+        font-size: 15px;
+      }
+
+      nav ul li a:hover{
+      color: white;
+      text-decoration: underline;
+      }
+
+.clear{
+  float: none;
+  clear: both;
+}
+
+main{
+  width: 80%;
+  height: 650px;
+  background-color: orange;
+}
+
+#row{
+  display: grid;
+  grid-template-areas: "row";
+  grid-template-rows: 1fr;
+  grid-template-columns: 100%;
+  text-align: center;
+}
+
+h1{
+  text-align: center;
+}
+
+#img1{
+  display: inline-grid;
+  height: 250px;
+  width: 100%;
+}
+
+#grid{
+  display: grid;
+  grid-template-areas: "col1 col2";
+  grid-auto-rows: 1fr;
+  grid-template-columns: 50% 50%;
+  text-align: center;
+}
+
+#col1{
+  grid-area: col1;
+  height: auto;
+  margin: 10px;
+}
+
+#img2{
+  display: inline-grid;
+  height: 250px;
+}
+
+#col2{
+  grid-area: col2;
+  height: auto;
+  background-color: white;
+  margin: 10px;
+}
+
+p{
+  color: orange;
+}
+
+#copy{
+}
+
+#addres{
+}
+
+#trade{
+}
