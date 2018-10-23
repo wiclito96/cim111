@@ -1,0 +1,9 @@
+@import "desktop2.css";
+
+.columns{
+  display: grid;
+  grid-template-areas: "grid";
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-columns: 100%;
+  text-align: center;
+}

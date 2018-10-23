@@ -11,7 +11,6 @@ header{
   width: 100px;
   display: inline-block;
   float: left;
-  padding-left: 15px;
 }
 
 nav{
@@ -32,7 +31,7 @@ nav{
       }
 
       nav ul li a:hover{
-      color: white;
+      color: orange;
       text-decoration: underline;
       }
 
@@ -53,13 +52,13 @@ main{
   grid-template-rows: 1fr;
   grid-template-columns: 100%;
   text-align: center;
+  height: 0 auto;
 }
 
 #img1{
   display: inline-grid;
   height: 250px;
   width: 100%;
-
 }
 
 #grid{

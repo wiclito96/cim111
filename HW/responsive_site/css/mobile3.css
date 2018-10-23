@@ -1,0 +1,41 @@
+@import "desktop3.css";
+
+#grid1{
+  display: grid;
+  grid-template-areas: "grid1";
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  grid-template-columns: 100%;
+  text-align: center;
+}
+
+#grid1{
+  display: grid;
+  grid-template-areas: "grid1";
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  grid-template-columns: 100%;
+  text-align: center;
+}
+
+#grid2{
+  display: grid;
+  grid-template-areas: "grid2";
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  grid-template-columns: 100%;
+  text-align: center;
+}
+
+#grid3{
+  display: grid;
+  grid-template-areas: "grid3";
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  grid-template-columns: 100%;
+  text-align: center;
+}
+
+#grid4{
+  display: grid;
+  grid-template-areas: "grid4";
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  grid-template-columns: 100%;
+  text-align: center;
+}
