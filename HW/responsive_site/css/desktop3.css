@@ -48,35 +48,132 @@ main{
 
 #grid1{
   display: grid;
-  grid-template-areas: "grid1";
+  grid-template-areas: "g1 g2 g3 g4";
   grid-template-rows: 1fr;
   grid-template-columns: 25% 25% 25% 25%;
 }
 
 #grid2{
   display: grid;
-  grid-template-areas: "grid2";
+  grid-template-areas: "g5 g6 g7 g8";
   grid-template-rows: 1fr;
   grid-template-columns: 25% 25% 25% 25%;
 }
 
 #grid3{
   display: grid;
-  grid-template-areas: "grid3";
+  grid-template-areas: "g9 g10 g11 g12";
   grid-template-rows: 1fr;
   grid-template-columns: 25% 25% 25% 25%;
 }
 
 #grid4{
   display: grid;
-  grid-template-areas: "grid4";
+  grid-template-areas: "g13 g14 g15 g16";
   grid-template-rows: 1fr;
   grid-template-columns: 25% 25% 25% 25%;
 }
 
-.gpics{
+.img{
+  height: 100px;
+}
+
+#g1{
     display: inline-grid;
-    height: 150px;
+    grid-area: grid1;
+    height: auto;
+}
+
+#g2{
+    display: inline-grid;
+    grid-area: grid1;
+    height: auto;
+}
+
+#g3{
+    display: inline-grid;
+    grid-area: grid1;
+    height: auto;
+}
+
+#g4{
+    display: inline-grid;
+    grid-area: grid1;
+    height: auto;
+}
+
+#g5{
+    display: inline-grid;
+    grid-area: grid2;
+    height: auto;
+}
+
+#g6{
+    display: inline-grid;
+    grid-area: grid2;
+    height: auto;
+}
+#g7{
+    display: inline-grid;
+    grid-area: grid2;
+    height: auto;
+}
+#g8{
+    display: inline-grid;
+    grid-area: grid2;
+    height: auto;
+}
+
+#g9{
+    display: inline-grid;
+    grid-area: grid3;
+    height: auto;
+}
+
+#g10{
+    display: inline-grid;
+    grid-area: grid3;
+    height: auto;
+}
+
+#g11{
+    display: inline-grid;
+    grid-area: grid3;
+    height: auto;
+}
+
+#g12{
+    display: inline-grid;
+    grid-area: grid3;
+    height: auto;
+}
+
+#g13{
+    display: inline-grid;
+    grid-area: grid4;
+    height: auto;
+}
+
+#g14{
+    display: inline-grid;
+    grid-area: grid4;
+    height: auto;
+}
+
+#g15{
+    display: inline-grid;
+    grid-area: grid4;
+    height: auto;
+}
+
+#g16{
+    display: inline-grid;
+    grid-area: grid4;
+    height: auto;
+}
+
+#break{
+  text-align: center;
 }
 
 footer{
