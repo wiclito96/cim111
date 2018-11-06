@@ -8,15 +8,15 @@
     <style>
 
       .box{
-        height: auto;
+        height: 0 auto;
       }
-      
+
     </style>
   </head>
 
   <body>
-    <h1>Welcome!</h1>
-    <p>What does it take to make one of the best drinks in the WORLD!? Well not much actually. Cafe con Leche really is made up of two very imporant ingredients, espresso/ coffee and milk. An additional ingredient is sugar for some sweetness. Don't fret! This amazing drink is very easy to make and well make you feel nice and warm inside.</p>
+    <h1 id="welcome">Welcome!</h1>
+    <p id="intro">What does it take to make one of the best drinks in the WORLD!? Well not much actually. Cafe con Leche really is made up of two very imporant ingredients, espresso/ coffee and milk. An additional ingredient is sugar for some sweetness. Don't fret! This amazing drink is very easy to make and well make you feel nice and warm inside.</p>
 
     <h3>Ingredients</h3>
     <ul>
@@ -42,7 +42,7 @@
 
     <h2 class="step">Step 1</h2>
       <div class="box">
-        <img src="">
+        <img src="images/step1.jpg">
           <ul>
             <p>Fill the espersso/ coffee pot up with water. Fill it up to the amount of espresso/ coffee you want.</p>
           </ul>
@@ -50,7 +50,7 @@
 
     <h2 class="step">Step 2</h2>
       <div class="box">
-        <img src="">
+        <img src="images/step2.jpg">
           <ul>
             <p>Pour the water into the machine.</p>
           </ul>
@@ -58,7 +58,7 @@
 
     <h2 id="tip">Tip*</h2>
       <div id="box2">
-        <img src="">
+        <img src="images/tip.jpg">
           <ul>
             <p>*If you want to add sugar, pour the amount of sugar you want at the bottom of the pot. So that when the liquid starts pouring, it will also start mixing with the sugar.</p>
           </ul>
@@ -66,7 +66,7 @@
 
     <h2 class="step">Step 3</h2>
       <div class="box">
-        <img src="">
+        <img src="images/step3.jpg">
           <ul>
             <p>Next, start packing the portafilter basket with the amount of espresso/ coffee you want.</p>
           </ul>
@@ -74,15 +74,15 @@
 
     <h2 class="step">Step 4</h2>
       <div class="box">
-        <img src="">
+        <img src="images/step4.jpg">
           <ul>
-            <p>Place the portafilter into the machine and turn on.</p>
+            <p>Place the portafilter into the machine, place the pot underneath the portafilter, and turn on.</p>
           </ul>
       </div>
 
     <h2 class="step">Step 5</h2>
       <div class="box">
-        <img src="">
+        <img src="images/step5.jpg">
           <ul>
             <p>While the espersso/ coffee is brewing, place the amount of milk you want into a cup.</p>
           </ul>
@@ -90,7 +90,7 @@
 
     <h2 class="step">Step 6</h2>
       <div class="box">
-        <img src="">
+        <img src="images/step6.jpg">
           <ul>
             <p>Place the cup into the microwave and heat to the tempature you want.</p>
           </ul>
@@ -98,7 +98,7 @@
 
     <h2 class="step">Step 7</h2>
       <div class="box">
-        <img src="">
+        <img src="images/step7.jpg">
           <ul>
             <p>Wait. After about 3-5 minutes, the espresso/ coffee should be ready and your cup of milk as well.</p>
           </ul>
@@ -106,7 +106,7 @@
 
     <h2 class="step">Step 8*</h2>
       <div class="box">
-        <img src="">
+        <img src="images/step8.jpg">
           <ul>
             <p>*If you added sugar or going to add sugar. Stir the pot with sugar and make sure that the sugar has fully disolved.</p>
           </ul>
@@ -114,7 +114,7 @@
 
     <h2 class="step">Step 9</h2>
       <div class="box">
-        <img src="">
+        <img src="images/step9.jpg">
           <ul>
             <p>Have your favorite mug ready and then pour the espersso/ coffee.</p>
           </ul>
@@ -122,7 +122,7 @@
 
     <h2 class="step">Step 10</h2>
       <div class="box">
-        <img src="">
+        <img src="images/step10.jpg">
           <ul>
             <p>Pour the milk afterwards into the mug.</p>
           </ul>
@@ -130,35 +130,43 @@
 
     <h2 class="step">Step 11</h2>
       <div class="box">
-        <img src="">
+        <img src="images/step11.jpg">
           <ul>
-            <p>Stir all the contents together.</p>
+            <p>Stir all the contents together and enjoy!</p>
           </ul>
       </div>
 
-    <h2 class="step">Step 12</h2>
-      <div class="box">
-        <img src="">
-          <ul>
-            <p>The best step... Enjoy your hard work!</p>
-          </ul>
-      </div>
-
-    <script src="js.js"></script>
+    <script src="js/js.js"></script>
 
     <script>
       $(document).ready(function(){
 
         $(".box").hide();
-        $(".box2").hide();
+        $("#box2").hide();
+
+        $("#tip").css("font-size", "50px");
+
+        $("#welcome").mouseenter(function(){
+          $("#intro").css("background-color", "coral");
+        });
+
+        $("#welcome").mouseleave(function(){
+          $("#intro").css("background-color", "transparent");
+          $("#intro").html("ENJOY!");
+        });
 
         $(".step").click(function(){
           $(".box").show();
           });
 
         $("#tip").click(function(){
-          $("#box2").toggle(1000);
+          $("#box2").toggle(250);
         });
+
+        $(".step").click(function(){
+          $(".box").hide();
+        });
+
       });
     </script>
   </body>
