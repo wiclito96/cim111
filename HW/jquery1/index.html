@@ -5,13 +5,7 @@
   <head>
     <title>Cafe con Leche al a College Student</title>
 
-    <style>
-
-      .box{
-        height: 0 auto;
-      }
-
-    </style>
+    <style></style>
   </head>
 
   <body>
@@ -40,7 +34,7 @@
     <h2>Instructions</h2>
     <p>This is a basic breakdown on how you can make Cafe con Leche at home. There are slightly different ways of making Cafe con Leche, but virtually they are the same to these instructions.</p>
 
-    <h2 class="step">Step 1</h2>
+    <h2 id="step1">Step 1</h2>
       <div class="box">
         <img src="images/step1.jpg">
           <ul>
@@ -48,7 +42,7 @@
           </ul>
       </div>
 
-    <h2 class="step">Step 2</h2>
+    <h2 id="step2">Step 2</h2>
       <div class="box">
         <img src="images/step2.jpg">
           <ul>
@@ -57,14 +51,14 @@
       </div>
 
     <h2 id="tip">Tip*</h2>
-      <div id="box2">
+      <div class="box">
         <img src="images/tip.jpg">
           <ul>
             <p>*If you want to add sugar, pour the amount of sugar you want at the bottom of the pot. So that when the liquid starts pouring, it will also start mixing with the sugar.</p>
           </ul>
       </div>
 
-    <h2 class="step">Step 3</h2>
+    <h2 id="step3">Step 3</h2>
       <div class="box">
         <img src="images/step3.jpg">
           <ul>
@@ -72,7 +66,7 @@
           </ul>
       </div>
 
-    <h2 class="step">Step 4</h2>
+    <h2 id="step4">Step 4</h2>
       <div class="box">
         <img src="images/step4.jpg">
           <ul>
@@ -80,7 +74,7 @@
           </ul>
       </div>
 
-    <h2 class="step">Step 5</h2>
+    <h2 id="step5">Step 5</h2>
       <div class="box">
         <img src="images/step5.jpg">
           <ul>
@@ -88,7 +82,7 @@
           </ul>
       </div>
 
-    <h2 class="step">Step 6</h2>
+    <h2 id="step6">Step 6</h2>
       <div class="box">
         <img src="images/step6.jpg">
           <ul>
@@ -96,7 +90,7 @@
           </ul>
       </div>
 
-    <h2 class="step">Step 7</h2>
+    <h2 id="step7">Step 7</h2>
       <div class="box">
         <img src="images/step7.jpg">
           <ul>
@@ -104,7 +98,7 @@
           </ul>
       </div>
 
-    <h2 class="step">Step 8*</h2>
+    <h2 id="step8">Step 8*</h2>
       <div class="box">
         <img src="images/step8.jpg">
           <ul>
@@ -112,7 +106,7 @@
           </ul>
       </div>
 
-    <h2 class="step">Step 9</h2>
+    <h2 id="step9">Step 9</h2>
       <div class="box">
         <img src="images/step9.jpg">
           <ul>
@@ -120,7 +114,7 @@
           </ul>
       </div>
 
-    <h2 class="step">Step 10</h2>
+    <h2 id="step10">Step 10</h2>
       <div class="box">
         <img src="images/step10.jpg">
           <ul>
@@ -128,7 +122,7 @@
           </ul>
       </div>
 
-    <h2 class="step">Step 11</h2>
+    <h2 id="step11">Step 11</h2>
       <div class="box">
         <img src="images/step11.jpg">
           <ul>
@@ -155,18 +149,106 @@
           $("#intro").html("ENJOY!");
         });
 
-        $(".step").click(function(){
+        $("#tip").click(function(){
+          $(".box").toggle(250);
+        });
+
+        $("#step1").click(function(){
           $(".box").show();
           });
 
-        $("#tip").click(function(){
-          $("#box2").toggle(250);
-        });
-
-        $(".step").click(function(){
+        $(".step1").click(function(){
           $(".box").hide();
         });
 
+        $("#step2").click(function(){
+          $(".box").show();
+          });
+
+        $(".step2").click(function(){
+          $(".box").hide();
+        });
+
+        $("#step3").click(function(){
+          $(".box").show();
+          });
+
+        $(".step3").click(function(){
+          $(".box").hide();
+        });
+
+        $("#step3").click(function(){
+          $(".box").show();
+          });
+
+        $(".step3").click(function(){
+          $(".box").hide();
+        });
+
+        $("#step4").click(function(){
+          $(".box").show();
+          });
+
+        $(".step4").click(function(){
+          $(".box").hide();
+        });
+
+        $("#step5").click(function(){
+          $(".box").show();
+          });
+
+        $(".step5").click(function(){
+          $(".box").hide();
+        });
+
+        $("#step6").click(function(){
+          $(".box").show();
+          });
+
+        $(".step6").click(function(){
+          $(".box").hide();
+        });
+
+        $("#step7").click(function(){
+          $(".box").show();
+          });
+
+        $(".step7").click(function(){
+          $(".box").hide();
+        });
+
+        $("#step8").click(function(){
+          $(".box").show();
+          });
+
+        $(".step8").click(function(){
+          $(".box").hide();
+        });
+
+        $("#step9").click(function(){
+          $(".box").show();
+          });
+
+        $(".step9").click(function(){
+          $(".box").hide();
+        });
+
+        $("#step10").click(function(){
+          $(".box").show();
+          });
+
+        $(".step10").click(function(){
+          $(".box").hide();
+        });
+
+        $("#step11").click(function(){
+          $(".box").show();
+          });
+
+        $(".step11").click(function(){
+          $(".box").hide();
+        });
+        
       });
     </script>
   </body>
