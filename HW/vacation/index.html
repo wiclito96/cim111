@@ -4,6 +4,59 @@
 <html>
   <head>
     <title>The land of the Rising Sun</title>
+
+    <link rel="stylesheet" href="js/jcarousel-0.3.9/examples/basic/jcarousel.basic.css">
+
+    <style>
+
+      body{
+          background-color: pink;
+      }
+
+      img{
+        width: 250px;
+      }
+
+      h1{
+        text-align: center;
+      }
+
+      h2{
+        text-align: center;
+      }
+
+      a{
+        text-decoration: none;
+      }
+
+      a:hover{
+        text-decoration: underline;
+      }
+
+      #grid{
+        display: grid;
+        grid-template-areas: "col1 col2 col3";
+        grid-template-rows: 1fr;
+        grid-template-columns: 33% 33% 33%;
+        text-align: center;
+      }
+
+      #col1{
+        grid-area: col1;
+        height: auto;
+      }
+
+      #col2{
+        grid-area: col2;
+        height: auto;
+      }
+
+      #col3{
+        grid-area: col3;
+        height: auto;
+      }
+
+    </style>
   </head>
 
   <body>
@@ -11,65 +64,139 @@
 
       <h2>Konichiwa!</h2>
 
+      <div class="jcarousel">
+        <div>
+          <img src="images/mount_fuji.jpg">
+          <img src="images/himeji_castle.jpg">
+          <img src="images/itsukushima_shrine.jpg">
+          <img src="images/jigokudani_monkey_park.jpg">
+          <img src="images/shibuya_crossing.jpg">
+        </div>
+      </div>
+
       <p>Japan is an island nation in the Pacific Ocean with dense cities, imperial palaces, mountainous national parks and thousands of shrines and temples. Shinkansen bullet trains connect the main islands of Kyushu (with Okinawa's subtropical beaches), Honshu (home to Tokyo and Hiroshima’s atomic-bomb memorial) and Hokkaido (famous for skiing). Tokyo, the capital, is known for skyscrapers, shopping and pop culture.</p>
 
-      <div class="col">
+    <section id="grid">
+      <div id="col1">
         <h2>Cities</h2>
-          <ol>
-            <li>Tokyo</li>
-              <img src="">
-            <li>Kyoto</li>
-              <img src="">
-            <li>Osaka</li>
-              <img src="">
-            <li>Hiroshima</li>
-              <img src="">
-            <li>Okinawa</li>
-              <img src="">
-          </ol>
+          <ul>
+            <li id="tokyo">Tokyo</li>
+              <img id="img1" class="images" src="images/tokyo.jpg">
+            <li id="kyoto">Kyoto</li>
+              <img id="img2" class="images" src="images/kyoto.jpg">
+            <li id="osaka">Osaka</li>
+              <img id="img3" class="images" src="images/osaka.jpg">
+            <li id="hiroshima">Hiroshima</li>
+              <img id="img4" class="images" src="images/hiroshima.jpg">
+            <li id="okinawa">Okinawa</li>
+              <img id="img5" class="images" src="images/okinawa.jpeg">
+          </ul>
       </div>
 
-      <div class="col">
+      <div id="col2">
         <h2>Landmarks</h2>
-          <ol>
-            <li>Mount Fuji</li>
-              <a href=""></a>
-            <li>Himeji Castle</li>
-              <a href=""></a>
-            <li>Itsukushima Shrine</li>
-              <a href=""></a>
-            <li>Jigokudani Monkey Park</li>
-              <a href=""></a>
-            <li>Shibuya Crossing</li>
-              <a href=""></a>
-          </ol>
+          <ul>
+            <li><a href="https://www.japan-guide.com/e/e2172.html" src"">Mount Fuji</a></li>
+            <li><a href="http://www.city.himeji.lg.jp/guide/castle_en.html" src"">Himeji Castle</a></li>
+            <li><a href="http://visithiroshima.net/world_heritage/20th/itsukushima/" src"">Itsukushima Shrine</a></li>
+            <li><a href="http://en.jigokudani-yaenkoen.co.jp/" src"">Jigokudani Monkey Park</a></li>
+            <li><a href="https://www.lonelyplanet.com/japan/tokyo/attractions/shibuya-crossing/a/poi-sig/396831/356817" src"">Shibuya Crossing</a></li>
+          </ul>
       </div>
 
-      <div class="col">
+      <div id="col3">
         <h2>Restaurants</h2>
-          <ol>
-            <li>Ise Sueyoshi</li>
-              <a href=""></a>
-              <img src="">
-            <li>Han no Daidokoro Kadochika</li>
-              <a href=""></a>
-              <img src="">
-            <li>GINZA 300BAR 8CHOME</li>
-              <a href=""></a>
-              <img src="">
-            <li>Tapas Molecular Bar </li>
-              <a href=""></a>
-              <img src="">
-            <li>Steak House Pound Akihabara</li>
-              <a href=""></a>
-              <img src="">
-          </ol>
+          <ul>
+            <li id="res1">Ise Sueyoshi</li>
+
+              <a id="link1" class="links" href="https://www.timeout.com/tokyo/restaurants/ise-sueyoshi" src"">Website here</a>
+              <img id="img6" class="images" src="images/ise_sueyoshi.jpg">
+
+            <li id="res2">Han no Daidokoro Kadochika</li>
+
+              <a id="link2" class="links" href="https://gurunavi.com/en/a143503/rst/" src"">Website here</a>
+              <img id="img7" class="images" src="images/han_no_daidohoro_kadochika.jpg">
+
+            <li id="res3">GINZA 300BAR 8CHOME</li>
+
+              <a id="link3" class="links" href="http://www.300bar.com/en/" src"">Website here</a>
+              <img id="img18" class="images" src="images/ginza_300bar_8chome.jpg">
+
+            <li id="res4">Tapas Molecular Bar</li>
+
+              <a id="link4" class="links" href="https://www.mandarinoriental.com/tokyo/nihonbashi/fine-dining/restaurants/fusion-cuisine/tapas-molecular-bar" src"">Website here</a>
+              <img id="img19" class="images" src="images/tapas_molecular_bar.jpg">
+
+            <li id="res5">Steak House Pound Akihabara</li>
+
+              <a id="link5" class="links" href="https://www.japantimes.co.jp/places/restaurants/restaurant-guide/tokyo-area/ginza-area/pound/#.W-osBpNKi00" src"">Website here</a>
+              <img id="img10" class="images" src="images/steak_house_pound_akihabara.jpg">
+
+          </ul>
       </div>
+    </section>
 
     <script src="js/js.js"></script>
+    <script type="text/javascript" src="js/jcarousel-0.3.9/vendor/jquery/jquery.js"></script>
+    <script type="text/javascript" src="js/jcarousel-0.3.9/dist/jquery.jcarousel.js"></script>
+    <script type="text/javascript" src="js/jcarousel-0.3.9/examples/basic/jcarousel.basic.js"></script>
 
     <script>
       $(document).ready(function(){
+
+        $(".images").hide()
+        $(".links").hide()
+
+        $(function() {
+          $('.jcarousel').jcarousel({
+
+          });
+        });
+
+        $("#tokyo").click(function(){
+          $("#img1").toggle(250);
+        });
+
+        $("#kyoto").click(function(){
+          $("#img2").toggle(250);
+        });
+
+        $("#osaka").click(function(){
+          $("#img3").toggle(250);
+        });
+
+        $("#hiroshima").click(function(){
+          $("#img4").toggle(250);
+        });
+
+        $("#okinawa").click(function(){
+          $("#img5").toggle(250);
+        });
+
+        $("#res1").click(function(){
+          $("#img6").toggle(250);
+          $("#link1").toggle(250);
+        });
+
+        $("#res2").click(function(){
+          $("#img7").toggle(250);
+          $("#link2").toggle(250);
+        });
+
+        $("#res3").click(function(){
+          $("#img8").toggle(250);
+          $("#link3").toggle(250);
+        });
+
+        $("#res4").click(function(){
+          $("#img9").toggle(250);
+          $("#link4").toggle(250);
+        });
+
+        $("#res5").click(function(){
+          $("#img10").toggle(250);
+          $("#link5").toggle(250);
+        });
 
       });
     </script>
