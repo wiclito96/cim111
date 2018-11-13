@@ -26,11 +26,21 @@
       }
 
       a{
-        text-decoration: none;
+        color: inherit;
       }
 
       a:hover{
+        color: blue;
+      }
+
+      .cities{
         text-decoration: underline;
+        text-decoration-color: blue;
+      }
+
+      .res{
+        text-decoration: underline;
+        text-decoration-color: blue;
       }
 
       #grid{
@@ -80,15 +90,15 @@
       <div id="col1">
         <h2>Cities</h2>
           <ul>
-            <li id="tokyo">Tokyo</li>
+            <li id="tokyo" class="cities">Tokyo</li>
               <img id="img1" class="images" src="images/tokyo.jpg">
-            <li id="kyoto">Kyoto</li>
+            <li id="kyoto" class="cities">Kyoto</li>
               <img id="img2" class="images" src="images/kyoto.jpg">
-            <li id="osaka">Osaka</li>
+            <li id="osaka" class="cities">Osaka</li>
               <img id="img3" class="images" src="images/osaka.jpg">
-            <li id="hiroshima">Hiroshima</li>
+            <li id="hiroshima" class="cities">Hiroshima</li>
               <img id="img4" class="images" src="images/hiroshima.jpg">
-            <li id="okinawa">Okinawa</li>
+            <li id="okinawa" class="cities">Okinawa</li>
               <img id="img5" class="images" src="images/okinawa.jpeg">
           </ul>
       </div>
@@ -107,27 +117,27 @@
       <div id="col3">
         <h2>Restaurants</h2>
           <ul>
-            <li id="res1">Ise Sueyoshi</li>
+            <li id="res1" class="res">Ise Sueyoshi</li>
 
               <a id="link1" class="links" href="https://www.timeout.com/tokyo/restaurants/ise-sueyoshi" src"">Website here</a>
               <img id="img6" class="images" src="images/ise_sueyoshi.jpg">
 
-            <li id="res2">Han no Daidokoro Kadochika</li>
+            <li id="res2" class="res">Han no Daidokoro Kadochika</li>
 
               <a id="link2" class="links" href="https://gurunavi.com/en/a143503/rst/" src"">Website here</a>
               <img id="img7" class="images" src="images/han_no_daidohoro_kadochika.jpg">
 
-            <li id="res3">GINZA 300BAR 8CHOME</li>
+            <li id="res3" class="res">GINZA 300BAR 8CHOME</li>
 
               <a id="link3" class="links" href="http://www.300bar.com/en/" src"">Website here</a>
               <img id="img18" class="images" src="images/ginza_300bar_8chome.jpg">
 
-            <li id="res4">Tapas Molecular Bar</li>
+            <li id="res4" class="res">Tapas Molecular Bar</li>
 
               <a id="link4" class="links" href="https://www.mandarinoriental.com/tokyo/nihonbashi/fine-dining/restaurants/fusion-cuisine/tapas-molecular-bar" src"">Website here</a>
               <img id="img19" class="images" src="images/tapas_molecular_bar.jpg">
 
-            <li id="res5">Steak House Pound Akihabara</li>
+            <li id="res5" class="res">Steak House Pound Akihabara</li>
 
               <a id="link5" class="links" href="https://www.japantimes.co.jp/places/restaurants/restaurant-guide/tokyo-area/ginza-area/pound/#.W-osBpNKi00" src"">Website here</a>
               <img id="img10" class="images" src="images/steak_house_pound_akihabara.jpg">
