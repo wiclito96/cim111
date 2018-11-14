@@ -5,8 +5,6 @@
   <head>
     <title>The land of the Rising Sun</title>
 
-    <link rel="stylesheet" href="js/jcarousel-0.3.9/examples/basic/jcarousel.basic.css">
-
     <style>
 
       body{
@@ -31,6 +29,14 @@
 
       a:hover{
         color: blue;
+      }
+
+      ul li{
+        display: block;
+      }
+
+      .img{
+        width: 600px;
       }
 
       .cities{
@@ -66,6 +72,80 @@
         height: auto;
       }
 
+      .jcarousel-wrapper {
+          margin: 20px auto;
+          position: relative;
+          border: 10px solid #fff;
+          width: 600px;
+          height: 400px;
+          -webkit-border-radius: 5px;
+             -moz-border-radius: 5px;
+                  border-radius: 5px;
+          -webkit-box-shadow: 0 0 2px #999;
+             -moz-box-shadow: 0 0 2px #999;
+                  box-shadow: 0 0 2px #999;
+      }
+      /** Carousel **/
+
+      .jcarousel {
+          position: relative;
+          overflow: hidden;
+      }
+
+      .jcarousel ul {
+          width: 10000em;
+          position: relative;
+          list-style: none;
+          margin: 0;
+          padding: 0;
+      }
+
+      .jcarousel li {
+          float: left;
+      }
+
+      /** Carousel Controls **/
+
+      .jcarousel-control-prev,
+      .jcarousel-control-next {
+          position: absolute;
+          top: 200px;
+          width: 30px;
+          height: 30px;
+          text-align: center;
+          background: #4E443C;
+          color: #fff;
+          text-decoration: none;
+          text-shadow: 0 0 1px #000;
+          font: 24px/27px Arial, sans-serif;
+          -webkit-border-radius: 30px;
+             -moz-border-radius: 30px;
+                  border-radius: 30px;
+          -webkit-box-shadow: 0 0 2px #999;
+             -moz-box-shadow: 0 0 2px #999;
+                  box-shadow: 0 0 2px #999;
+      }
+
+      .jcarousel-control-prev {
+          left: -50px;
+      }
+
+      .jcarousel-control-next {
+          right: -50px;
+      }
+
+      .jcarousel-control-prev:hover span,
+      .jcarousel-control-next:hover span {
+          display: block;
+      }
+
+      .jcarousel-control-prev.inactive,
+      .jcarousel-control-next.inactive {
+          opacity: .5;
+          cursor: default;
+      }
+
+
     </style>
   </head>
 
@@ -74,15 +154,27 @@
 
       <h2>Konichiwa!</h2>
 
-      <div class="jcarousel">
-        <div>
-          <img src="images/mount_fuji.jpg">
-          <img src="images/himeji_castle.jpg">
-          <img src="images/itsukushima_shrine.jpg">
-          <img src="images/jigokudani_monkey_park.jpg">
-          <img src="images/shibuya_crossing.jpg">
-        </div>
+
+
+      <div class="wrapper">
+
+          <div class="jcarousel-wrapper">
+              <div class="jcarousel">
+                  <ul>
+                      <li><img class="img" src="images/mount_fuji.jpg"></li>
+                      <li><img class="img" src="images/himeji_castle.jpg"></li>
+                      <li><img class="img" src="images/itsukushima_shrine.jpg"></li>
+                      <li><img class="img" src="images/jigokudani_monkey_park.jpg"></li>
+                      <li><img class="img" src="images/shibuya_crossing.jpg"></li>
+                  </ul>
+              </div>
+
+              <a href="#" class="jcarousel-control-prev">&lsaquo;</a>
+              <a href="#" class="jcarousel-control-next">&rsaquo;</a>
+          </div>
       </div>
+
+
 
       <p>Japan is an island nation in the Pacific Ocean with dense cities, imperial palaces, mountainous national parks and thousands of shrines and temples. Shinkansen bullet trains connect the main islands of Kyushu (with Okinawa's subtropical beaches), Honshu (home to Tokyo and Hiroshima’s atomic-bomb memorial) and Hokkaido (famous for skiing). Tokyo, the capital, is known for skyscrapers, shopping and pop culture.</p>
 
@@ -117,29 +209,20 @@
       <div id="col3">
         <h2>Restaurants</h2>
           <ul>
-            <li id="res1" class="res">Ise Sueyoshi</li>
 
-              <a id="link1" class="links" href="https://www.timeout.com/tokyo/restaurants/ise-sueyoshi" src"">Website here</a>
+            <li id="res1" class="res">Ise Sueyoshi</li>
               <img id="img6" class="images" src="images/ise_sueyoshi.jpg">
 
             <li id="res2" class="res">Han no Daidokoro Kadochika</li>
-
-              <a id="link2" class="links" href="https://gurunavi.com/en/a143503/rst/" src"">Website here</a>
               <img id="img7" class="images" src="images/han_no_daidohoro_kadochika.jpg">
 
             <li id="res3" class="res">GINZA 300BAR 8CHOME</li>
-
-              <a id="link3" class="links" href="http://www.300bar.com/en/" src"">Website here</a>
               <img id="img18" class="images" src="images/ginza_300bar_8chome.jpg">
 
             <li id="res4" class="res">Tapas Molecular Bar</li>
-
-              <a id="link4" class="links" href="https://www.mandarinoriental.com/tokyo/nihonbashi/fine-dining/restaurants/fusion-cuisine/tapas-molecular-bar" src"">Website here</a>
               <img id="img19" class="images" src="images/tapas_molecular_bar.jpg">
 
             <li id="res5" class="res">Steak House Pound Akihabara</li>
-
-              <a id="link5" class="links" href="https://www.japantimes.co.jp/places/restaurants/restaurant-guide/tokyo-area/ginza-area/pound/#.W-osBpNKi00" src"">Website here</a>
               <img id="img10" class="images" src="images/steak_house_pound_akihabara.jpg">
 
           </ul>
@@ -147,21 +230,54 @@
     </section>
 
     <script src="js/js.js"></script>
-    <script type="text/javascript" src="js/jcarousel-0.3.9/vendor/jquery/jquery.js"></script>
     <script type="text/javascript" src="js/jcarousel-0.3.9/dist/jquery.jcarousel.js"></script>
-    <script type="text/javascript" src="js/jcarousel-0.3.9/examples/basic/jcarousel.basic.js"></script>
 
     <script>
       $(document).ready(function(){
 
-        $(".images").hide()
-        $(".links").hide()
 
-        $(function() {
-          $('.jcarousel').jcarousel({
 
-          });
+
+        (function($) {
+            $(function() {
+                $('.jcarousel').jcarousel();
+
+                $('.jcarousel-control-prev')
+                    .on('jcarouselcontrol:active', function() {
+                        $(this).removeClass('inactive');
+                    })
+                    .on('jcarouselcontrol:inactive', function() {
+                        $(this).addClass('inactive');
+                    })
+                    .jcarouselControl({
+                        target: '-=1'
+                    });
+
+                $('.jcarousel-control-next')
+                    .on('jcarouselcontrol:active', function() {
+                        $(this).removeClass('inactive');
+                    })
+                    .on('jcarouselcontrol:inactive', function() {
+                        $(this).addClass('inactive');
+                    })
+                    .jcarouselControl({
+                        target: '+=1'
+                    });
+
+                $('.jcarousel-pagination')
+                    .on('jcarouselpagination:active', 'a', function() {
+                        $(this).addClass('active');
+                    })
+                    .on('jcarouselpagination:inactive', 'a', function() {
+                        $(this).removeClass('active');
+                    })
+                    .jcarouselPagination();
+            });
         });
+
+
+
+        $(".images").hide()
 
         $("#tokyo").click(function(){
           $("#img1").toggle(250);
@@ -185,27 +301,22 @@
 
         $("#res1").click(function(){
           $("#img6").toggle(250);
-          $("#link1").toggle(250);
         });
 
         $("#res2").click(function(){
           $("#img7").toggle(250);
-          $("#link2").toggle(250);
         });
 
         $("#res3").click(function(){
           $("#img8").toggle(250);
-          $("#link3").toggle(250);
         });
 
         $("#res4").click(function(){
           $("#img9").toggle(250);
-          $("#link4").toggle(250);
         });
 
         $("#res5").click(function(){
           $("#img10").toggle(250);
-          $("#link5").toggle(250);
         });
 
       });
