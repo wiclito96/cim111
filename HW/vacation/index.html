@@ -233,93 +233,91 @@
     <script type="text/javascript" src="js/jcarousel-0.3.9/dist/jquery.jcarousel.js"></script>
 
     <script>
-      $(document).ready(function(){
 
 
 
-
-        (function($) {
-            $(function() {
-                $('.jcarousel').jcarousel();
-
-                $('.jcarousel-control-prev')
-                    .on('jcarouselcontrol:active', function() {
-                        $(this).removeClass('inactive');
-                    })
-                    .on('jcarouselcontrol:inactive', function() {
-                        $(this).addClass('inactive');
-                    })
-                    .jcarouselControl({
-                        target: '-=1'
-                    });
-
-                $('.jcarousel-control-next')
-                    .on('jcarouselcontrol:active', function() {
-                        $(this).removeClass('inactive');
-                    })
-                    .on('jcarouselcontrol:inactive', function() {
-                        $(this).addClass('inactive');
-                    })
-                    .jcarouselControl({
-                        target: '+=1'
-                    });
-
-                $('.jcarousel-pagination')
-                    .on('jcarouselpagination:active', 'a', function() {
-                        $(this).addClass('active');
-                    })
-                    .on('jcarouselpagination:inactive', 'a', function() {
-                        $(this).removeClass('active');
-                    })
-                    .jcarouselPagination();
-            });
-        });
+    $(document).ready(function(){
 
 
+      $('.jcarousel').jcarousel();
 
-        $(".images").hide()
+      $('.jcarousel-control-prev')
+          .on('jcarouselcontrol:active', function() {
+              $(this).removeClass('inactive');
+          })
+          .on('jcarouselcontrol:inactive', function() {
+              $(this).addClass('inactive');
+          })
+          .jcarouselControl({
+              target: '-=1'
+          });
 
-        $("#tokyo").click(function(){
-          $("#img1").toggle(250);
-        });
+      $('.jcarousel-control-next')
+          .on('jcarouselcontrol:active', function() {
+              $(this).removeClass('inactive');
+          })
+          .on('jcarouselcontrol:inactive', function() {
+              $(this).addClass('inactive');
+          })
+          .jcarouselControl({
+              target: '+=1'
+          });
 
-        $("#kyoto").click(function(){
-          $("#img2").toggle(250);
-        });
+      $('.jcarousel-pagination')
+          .on('jcarouselpagination:active', 'a', function() {
+              $(this).addClass('active');
+          })
+          .on('jcarouselpagination:inactive', 'a', function() {
+              $(this).removeClass('active');
+          })
+          .jcarouselPagination();
 
-        $("#osaka").click(function(){
-          $("#img3").toggle(250);
-        });
 
-        $("#hiroshima").click(function(){
-          $("#img4").toggle(250);
-        });
+      $(".images").hide()
 
-        $("#okinawa").click(function(){
-          $("#img5").toggle(250);
-        });
-
-        $("#res1").click(function(){
-          $("#img6").toggle(250);
-        });
-
-        $("#res2").click(function(){
-          $("#img7").toggle(250);
-        });
-
-        $("#res3").click(function(){
-          $("#img8").toggle(250);
-        });
-
-        $("#res4").click(function(){
-          $("#img9").toggle(250);
-        });
-
-        $("#res5").click(function(){
-          $("#img10").toggle(250);
-        });
-
+      $("#tokyo").click(function(){
+        $("#img1").toggle(250);
       });
+
+      $("#kyoto").click(function(){
+        $("#img2").toggle(250);
+      });
+
+      $("#osaka").click(function(){
+        $("#img3").toggle(250);
+      });
+
+      $("#hiroshima").click(function(){
+        $("#img4").toggle(250);
+      });
+
+      $("#okinawa").click(function(){
+        $("#img5").toggle(250);
+      });
+
+      $("#res1").click(function(){
+        $("#img6").toggle(250);
+      });
+
+      $("#res2").click(function(){
+        $("#img7").toggle(250);
+      });
+
+      $("#res3").click(function(){
+        $("#img8").toggle(250);
+      });
+
+      $("#res4").click(function(){
+        $("#img9").toggle(250);
+      });
+
+      $("#res5").click(function(){
+        $("#img10").toggle(250);
+      });
+
+    });
+
+
     </script>
 
   </body>
