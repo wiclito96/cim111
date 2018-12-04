@@ -3,6 +3,103 @@
   <head>
     <meta charset="utf-8">
     <title>Wycliffe Grafton Jr.</title>
+
+    <style>
+
+      header{
+        width: 100%;
+        height: 100px;
+        background-color: white;
+        text-align: center;
+        border-bottom: solid;
+      }
+
+      nav{
+        float: right;
+        height: 1fr;
+        width: 50%;
+        padding-top: 50px;
+      }
+        nav ul{}
+          nav ul li{
+            list-style: none;
+            display: inline-block;
+          }
+            nav ul li a{
+              text-decoration: none;
+              color: green;
+              font-size: 15px;
+            }
+
+            nav ul li a:hover{
+            color: orange;
+            text-decoration: underline;
+            }
+
+      .clear{
+        float: none;
+        clear: both;
+      }
+
+      main{
+        width: 100%;
+        height: auto;
+        background-color: white;
+      }
+
+      #grid{
+        display: grid;
+        grid-template-areas: "col1 col2";
+        grid-auto-rows: 1fr;
+        grid-template-columns: 50% 50%;
+        text-align: left;
+      }
+
+      h2{
+
+      }
+
+      #col1{
+        grid-area: col1;
+        height: auto;
+        margin: 10px;
+      }
+
+      #img1{
+        display: inline-grid;
+      }
+
+      #col2{
+        grid-area: col2;
+        height: auto;
+        margin: 10px;
+      }
+
+      #img2{
+        display: inline-grid;
+      }
+
+      p{
+
+      }
+
+      footer{
+        width: 100%;
+        height: 100px;
+        background-color: green;
+        text-align: center;
+      }
+
+      #copy{
+      }
+
+      #addres{
+      }
+
+      #trade{
+      }
+
+    </style>
   </head>
   <body>
     <header>
@@ -22,18 +119,18 @@
 
     <main>
       <section id="grid">
-        <div class="box">
+        <div id="box1">
           <h3>Upcoming Projects!</h3>
             <h2>Not Me</h2>
-              <img id="img1" src="" alt="">
+              <img id="img1" src="" alt="Not Me short film">
                 <p><strong>Logline:</strong>
                 <br>
                     <strong>Synopsis:</strong> </p>
         </div>
 
-        <div class="box">
+        <div id="box2">
           <h3>Snapshot!</h3>
-            <img id="img2" src="" alt="">
+            <img id="img2" src="" alt="Wycliffe Grafton Jr.">
               <p></p>
         </div>
       </section>
