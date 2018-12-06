@@ -8,7 +8,7 @@ header{
 
 nav{
   float: right;
-  height: 1fr;
+  height: auto;
   width: 50%;
   padding-top: 50px;
 }
@@ -53,4 +53,10 @@ footer{
 }
 
 #trade{
+}
+
+
+.lImages{
+  width: 350px;
+  display: inline-block;
 }

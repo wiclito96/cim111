@@ -7,6 +7,13 @@
     <link rel="stylesheet" href="css/desktopLibrary.css" media="only screen and (min-width: 600px)">
     <link rel="stylesheet" href="css/mobileLibrary.css" media="only screen and (max-width: 600px)">
 
+    <link href="js/lity.css" rel="stylesheet">
+
+    <script src="js/js.js"></script>
+    <script src="js/lity.js"></script>
+
+
+
   </head>
   <body>
     <header>
@@ -15,49 +22,24 @@
       <nav>
         <ul>
           <li><a href="about.html">About</a></li>
-          <li><a href="library.hrml">Works</a></li>
+          <li><a href="library.html">Works</a></li>
           <li><a href="family.html">Collaborators</a></li>
           <li><a href="connect.html">Connect</a></li>
         </ul>
       </nav>
+      <div class="clear"></div>
+
 
       <div class="class"></div>
     </header>
 
     <main>
-      <div class="popup-gallery">
-      	<a href="https://vimeo.com/265808191" title="Alone Together"><img src="images/Alone Together.jpg" alt="Alone Together"></a>
-      	<a href="https://vimeo.com/302977885" title="Legend of the Forest Boy"><img src="images/Legend of the Forest Boy.jpg" alt="Legend of the Forest Boy"</a>
-      	<a href="https://vimeo.com/302980885" title="Why?"><img src="images/Why.jpg" alt="Why?"</a>
-      	<a href="https://vimeo.com/303078809" title="Walter Loves Jack"><img src="images/Walter Loves Jack.jpg" alt="Walter Loves Jack"</a>
-      	<a href="https://vimeo.com/303076392" title="Prom Night"><img src="images/Prom Night.jpg" alt="Prom Night"</a>
-      </div>
+      	<a class="lImages" href="https://vimeo.com/265808191" title="Alone Together" data-lity><img class="lImages" src="images/Alone Together.jpg" alt="Alone Together"></a>
+      	<a class="lImages" href="https://vimeo.com/302977885" title="Legend of the Forest Boy" data-lity><img  class="lImages" src="images/Legend of the Forest Boy.jpg" alt="Legend of the Forest Boy"></a>
+      	<a class="lImages" href="https://vimeo.com/302980885" title="Why?" data-lity><img  class="lImages" src="images/Why.jpg" alt="Why?"></a>
+      	<a class="lImages" href="https://vimeo.com/303078809" title="Walter Loves Jack" data-lity><img  class="lImages" src="images/Walter Loves Jack.jpg" alt="Walter Loves Jack"></a>
+      	<a class="lImages" href="https://vimeo.com/303076392" title="Prom Night" data-lity><img  class="lImages" src="images/Prom Night.jpg" alt="Prom Night"></a>
 
-      <script src="js/js.js"></script>
-
-      <script>
-
-      $(document).ready(function() {
-
-      	$('.popup-gallery').magnificPopup({
-      		delegate: 'a',
-      		type: 'image',
-      		tLoading: 'Loading image #%curr%...',
-      		mainClass: 'mfp-img-mobile',
-      		gallery: {
-      			enabled: true,
-      			navigateByImgClick: true,
-      			preload: [0,1] // Will preload 0 - before current, and 1 after the current image
-      		},
-      		image: {
-      			tError: '<a href="%url%">The image #%curr%</a> could not be loaded.',
-      			titleSrc: function(item) {
-      				return item.el.attr('title') + '<small>by Marsel Van Oosten</small>';
-      			}
-      		}
-      	});
-      });
-    </script>
 
     </main>
 
