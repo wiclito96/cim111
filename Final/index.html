@@ -30,21 +30,33 @@
 
         <!-- Full-width images with number and caption text -->
         <div class="mySlides fade">
-          <div class="numbertext">1 / 3</div>
-          <img src="img1.jpg" style="width:100%">
-          <div class="text">Caption Text</div>
+          <div class="numbertext">1 / 5</div>
+          <img src="images/Alone Together.jpg" style="width:100%">
+          <div class="text">Alone Together</div>
         </div>
 
         <div class="mySlides fade">
-          <div class="numbertext">2 / 3</div>
-          <img src="img2.jpg" style="width:100%">
-          <div class="text">Caption Two</div>
+          <div class="numbertext">2 / 5</div>
+          <img src="images/Legend of the Forest Boy.jpg" style="width:100%">
+          <div class="text">Legend of the Forest Boy</div>
         </div>
 
         <div class="mySlides fade">
-          <div class="numbertext">3 / 3</div>
-          <img src="img3.jpg" style="width:100%">
-          <div class="text">Caption Three</div>
+          <div class="numbertext">3 / 5</div>
+          <img src="images/Why.jpg" style="width:100%">
+          <div class="text">Why?</div>
+        </div>
+
+        <div class="mySlides fade">
+          <div class="numbertext">4 / 5</div>
+          <img src="images/Walter Loves Jack.jpg" style="width:100%">
+          <div class="text">Walter Loves Jack</div>
+        </div>
+
+        <div class="mySlides fade">
+          <div class="numbertext">5 / 5</div>
+          <img src="images/Prom Night.jpg" style="width:100%">
+          <div class="text">Prom Night</div>
         </div>
 
         <!-- Next and previous buttons -->
@@ -58,6 +70,8 @@
         <span class="dot" onclick="currentSlide(1)"></span>
         <span class="dot" onclick="currentSlide(2)"></span>
         <span class="dot" onclick="currentSlide(3)"></span>
+        <span class="dot" onclick="currentSlide(4)"></span>
+        <span class="dot" onclick="currentSlide(5)"></span>
       </div>
 
       <section id="grid">
@@ -97,7 +111,7 @@
               slideIndex++;
               if (slideIndex > slides.length) {slideIndex = 1}
               slides[slideIndex-1].style.display = "block";
-              setTimeout(showSlides, 2000); // Change image every 2 seconds
+              setTimeout(showSlides, 5000); // Change image every 5 seconds
           }
 
         });

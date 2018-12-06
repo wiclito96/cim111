@@ -145,9 +145,9 @@
   h2{
 
   }
-    /*
-    #box1{
-    grid-area: col1;
+
+  #box1{
+    grid-area: box1;
     height: auto;
     margin: 10px;
   }
@@ -157,7 +157,7 @@
   }
 
   #box2{
-    grid-area: col2;
+    grid-area: box2;
     height: auto;
     margin: 10px;
   }
@@ -165,7 +165,7 @@
   #img2{
     display: inline-grid;
   }
-  8*/
+  
   p{
 
   }
