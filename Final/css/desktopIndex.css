@@ -4,13 +4,34 @@ background-image: url(../images/sand.jpg);
 background-size: cover or contain or px dimension
 background-repeat: no-repeat;
 */
+  body{
+  background-image: url(../images/water2.jpg);
+  background-size: cover;
+  }
+
   header{
     width: 100%;
     height: 100px;
-    background-color: white;
     text-align: center;
-    border-bottom: solid;
+  }
 
+  #name{
+    width: 100px;
+    display: inline-block;
+    float: left;
+    padding-top: 25px;
+    padding-left: 50px;
+  }
+
+  #name a{
+    text-decoration: none;
+    color: blue;
+    font-size: 50px;
+  }
+
+  #name a:hover{
+  color: black;
+  text-decoration: underline;
   }
 
   nav{
@@ -26,12 +47,12 @@ background-repeat: no-repeat;
       }
         nav ul li a{
           text-decoration: none;
-          color: green;
+          color: blue;
           font-size: 15px;
         }
 
         nav ul li a:hover{
-        color: orange;
+        color: black;
         text-decoration: underline;
         }
 
@@ -43,7 +64,6 @@ background-repeat: no-repeat;
   main{
     width: 100%;
     height: auto;
-    background-color: white;
   }
 
   /* Slideshow container */
@@ -148,13 +168,18 @@ background-repeat: no-repeat;
   }
 
   h2{
+    text-align: center;
+  }
 
+  h3{
+    text-align: center;
   }
 
   #box1{
     grid-area: box1;
     height: auto;
     margin: 10px;
+    border: solid;
   }
 
   #img1{
@@ -165,10 +190,18 @@ background-repeat: no-repeat;
     grid-area: box2;
     height: auto;
     margin: 10px;
+    border: solid;
   }
 
   #img2{
     display: inline-grid;
+    width: 200px;
+    height: 200px;
+    float: left;
+  }
+
+  #quote{
+    padding-left: 250px;
   }
 
   p{
@@ -178,7 +211,6 @@ background-repeat: no-repeat;
   footer{
     width: 100%;
     height: 100px;
-    background-color: green;
     text-align: center;
   }
 
