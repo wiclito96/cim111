@@ -5,8 +5,8 @@ background-size: cover or contain or px dimension
 background-repeat: no-repeat;
 */
   body{
-  background-image: url(../images/water2.jpg);
-  background-size: cover;
+    background-image: url(../images/water2.jpg);
+    background-size: cover;
   }
 
   header{
@@ -185,9 +185,9 @@ background-repeat: no-repeat;
   }
 
   #img1{
-    display: inline-grid;
+    display: block;
     width: 200px;
-    padding-left: 225px;
+    margin: 0 auto;
   }
 
   #box2{
@@ -202,6 +202,7 @@ background-repeat: no-repeat;
     width: 150px;
     height: auto;
     float: left;
+    margin: 10px;
   }
 
   #quote{

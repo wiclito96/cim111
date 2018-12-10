@@ -1,6 +1,6 @@
   body{
-  background-image: url(../images/water2.jpg);
-  background-size: cover;
+    background-image: url(../images/water2.jpg);
+    background-size: cover;
   }
 
   header{
@@ -84,6 +84,7 @@
     width: 250px;
     height: auto;
     float: left;
+    margin: 10px;
   }
 
   #box2{
@@ -97,6 +98,7 @@
     width: 250px;
     height: auto;
     float: right;
+    margin: 10px;
   }
 
   p{
