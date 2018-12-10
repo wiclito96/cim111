@@ -7,6 +7,7 @@
     width: 100%;
     height: 100px;
     text-align: center;
+    border-bottom: solid;
   }
 
   #name{
@@ -60,10 +61,13 @@
     height: auto;
   }
 
+  img{
+
+  }
+
   footer{
     width: 100%;
     height: 100px;
-    background-color: green;
     text-align: center;
   }
 
@@ -79,5 +83,6 @@
 
   .lImages{
     width: 350px;
-    display: inline-block;
+    padding-left: 200px;
+    padding-top: 100px;
   }
