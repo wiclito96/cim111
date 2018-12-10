@@ -1,0 +1,15 @@
+@import "desktopIndex.css";
+
+#grid{
+  display: grid;
+  grid-template-areas: "box1 box2";
+  grid-auto-rows: 1fr;
+  grid-template-columns: 100%;
+  text-align: left;
+}
+
+#img1{
+  display: inline-grid;
+  width: 200px;
+  padding: inherit;
+}
