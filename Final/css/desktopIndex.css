@@ -186,6 +186,8 @@ background-repeat: no-repeat;
 
   #img1{
     display: inline-grid;
+    width: 200px;
+    padding-left: 225px;
   }
 
   #box2{
@@ -197,8 +199,8 @@ background-repeat: no-repeat;
 
   #img2{
     display: inline-grid;
-    width: 200px;
-    height: 200px;
+    width: 150px;
+    height: auto;
     float: left;
   }
 

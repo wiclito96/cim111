@@ -1,6 +1,6 @@
   body{
-  background-image: url(../images/water2.jpg);
-  background-size: cover;
+    background-image: url(../images/water2.jpg);
+    background-size: cover;
   }
 
   header{
@@ -82,18 +82,22 @@
 
   #img1{
     display: inline-grid;
+    height: 350px;
+    padding-left: 350px;
   }
 
   #box2{
     grid-area: box2;
     height: auto;
     margin: 10px;
+    padding-top: 100px;
+    padding-left: 25px;
   }
 
   #img2{
     display: inline-grid;
   }
-  
+
 
   p{
 

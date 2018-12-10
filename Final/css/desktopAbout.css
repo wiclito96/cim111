@@ -81,8 +81,8 @@
 
   #img1{
     display: block;
-    width: 200px;
-    height: 200px;
+    width: 250px;
+    height: auto;
     float: left;
   }
 
@@ -94,8 +94,8 @@
 
   #img2{
     display: block;
-    width: 200px;
-    height: 200px;
+    width: 250px;
+    height: auto;
     float: right;
   }
 
