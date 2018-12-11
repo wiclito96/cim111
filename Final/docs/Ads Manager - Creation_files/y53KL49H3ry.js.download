@@ -1,0 +1,3 @@
+if (self.CavalryLogger) { CavalryLogger.start_js(["BJyR0"]); }
+
+__d("XSVDefaultPromotablePageIDController",["XController"],(function(a,b,c,d,e,f){e.exports=b("XController").create("/ads/store_visits/default_promotable_page_id/",{current_promoted_page_id:{type:"FBID"}})}),null);

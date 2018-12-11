@@ -1,0 +1,3 @@
+if (self.CavalryLogger) { CavalryLogger.start_js(["5lmOE"]); }
+
+__d("ShowreelTypeUtils",[],(function(a,b,c,d,e,f){"use strict";e.exports={toSpecification:function(a){return a},toPatches:function(a){return a}}}),null);

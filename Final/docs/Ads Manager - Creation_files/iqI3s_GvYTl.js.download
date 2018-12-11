@@ -1,0 +1,4 @@
+if (self.CavalryLogger) { CavalryLogger.start_js(["IGi08"]); }
+
+__d("RecurringBudgetMessageForNewCampaignNotice.react",["AdsBudgetSpendMessages"],(function(a,b,c,d,e,f){"use strict";function a(a){return b("AdsBudgetSpendMessages").getDailySpendMessage(a.budget,a.currency)}e.exports=a}),null);
+__d("XUIDialogConfirmButton.react",["fbt","React","XUIDialogButton.react"],(function(a,b,c,d,e,f,g){__p&&__p();var h;h=babelHelpers.inherits(a,b("React").Component);h&&h.prototype;a.prototype.render=function(){"use strict";return b("React").createElement(b("XUIDialogButton.react"),babelHelpers["extends"]({},this.props,{action:"confirm",label:g._("Confirm")}))};function a(){"use strict";h.apply(this,arguments)}e.exports=a}),null);

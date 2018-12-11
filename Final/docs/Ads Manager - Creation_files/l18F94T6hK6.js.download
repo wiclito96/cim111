@@ -1,0 +1,3 @@
+if (self.CavalryLogger) { CavalryLogger.start_js(["UhWnz"]); }
+
+__d("XCheckAdsetsAffectedByEntityRemappingController",["XController"],(function(a,b,c,d,e,f){e.exports=b("XController").create("/ajax/targeting/adset_affected_by_entity_remapping/",{ids:{type:"FBIDVector",required:!0}})}),null);

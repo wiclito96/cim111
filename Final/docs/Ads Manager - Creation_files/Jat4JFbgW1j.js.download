@@ -1,0 +1,3 @@
+if (self.CavalryLogger) { CavalryLogger.start_js(["we\/uT"]); }
+
+__d("AdsModalBodyNoPadding.react",["cx","React"],(function(a,b,c,d,e,f,g){"use strict";__p&&__p();var h;c=b("React").Component;h=babelHelpers.inherits(a,c);h&&h.prototype;a.prototype.render=function(){return b("React").createElement("div",{className:"_1u7q"},this.props.children)};function a(){h.apply(this,arguments)}e.exports=a}),null);
